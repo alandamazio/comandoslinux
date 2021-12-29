@@ -1,0 +1,415 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.2.2.2 (Linux)"/>
+	<meta name="created" content="2021-12-07T20:54:41.421942770"/>
+	<meta name="changed" content="2021-12-29T12:45:43.598321508"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+		blockquote { margin-left: 1cm; margin-right: 1cm; background: transparent }
+		h4 { margin-top: 0.21cm; margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h4.western { font-family: "Liberation Serif", serif; font-size: 12pt; font-weight: bold }
+		h4.cjk { font-family: "Noto Serif CJK SC"; font-size: 12pt; font-weight: bold }
+		h4.ctl { font-family: "Lohit Devanagari"; font-size: 12pt; font-weight: bold }
+		strong { font-weight: bold }
+		code.western { font-family: "Liberation Mono", monospace }
+		code.cjk { font-family: "Noto Sans Mono CJK SC", monospace }
+		code.ctl { font-family: "Liberation Mono", monospace }
+		a:link { color: #000080; so-language: zxx; text-decoration: underline }
+		a:visited { color: #800000; so-language: zxx; text-decoration: underline }
+	</style>
+</head>
+<body lang="pt-BR" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="5" style="font-size: 17pt"><font color="#1c1d1f">Curso
+Linux</span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#1c1d1f">Quando
+logamos no sistema<b> Linux</b>, nós caímos no diretório do
+usuário usado para logar.</span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#1c1d1f">Exemplo:
+Se logarmos como <b>root </b>caímos em um diretório vazio, que não
+tem nada.</span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#1c1d1f">Para
+ver os arquivos principais do sistema usamos: </span></font></font></font>
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#1c1d1f"><b>ls
+/  </b>( <b>/</b> = (barra) diretório do sistema – Diretório
+raiz)</span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000">*
+Alguns comandos vêm com o sistema e outros não.</span></font></font></font></p>
+<p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="3" style="font-size: 13pt"><font color="#1c1d1f">Variáveis
+na linha de comando Shell</span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#1c1d1f"><span style="font-weight: normal">Exemplo:
+</span><span style="font-weight: normal">* Coloca-se cifrão para
+acessar a variável</span></span></font></font></font></p>
+<p align="left" style="line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><span style="font-variant: normal"><span style="letter-spacing: normal"><font color="#000000">
+</span></span><font size="2" style="font-size: 11pt"><span style="font-variant: normal"><font face="Liberation Serif, serif"><span style="letter-spacing: normal"><span style="font-style: normal"><b>~#
+ cor=azul     (sem espaços)<br/>
+</span></b></span></span></font></span>
+<font face="Liberation Serif, serif"><span style="font-style: normal"><b>~#
+ echo $cor<br/>
+</b></span></font> <font face="Liberation Serif, serif"><span style="font-style: normal"><b>~#
+ azul (resultado)</b></span></font></font></font></p>
+<p align="left" style="line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font size="2" style="font-size: 11pt"><span style="font-variant: normal"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><font color="#1c1d1f">*
+Para que o Linux encontre os comandos, estes precisam estar listados
+na variável </span></span></span></font></span><span style="font-variant: normal"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><span style="letter-spacing: normal"><span style="font-style: normal"><b>PATH
+ </b></span></span></font></span><span style="font-variant: normal"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Exemplo:
+</span></span></span></font></span><span style="font-variant: normal"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+</span></span></span></font></span><span style="font-variant: normal"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+                                           <br/>
+</span></span></span></font></span><span style="font-variant: normal"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><span style="letter-spacing: normal"><span style="font-style: normal"><b>echo
+$PATH</b></span></span></font></span><span style="font-variant: normal"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+                  Resultado: /usr/local/sbin:/usr/local/sbin:………</span></span></span></span></font></span></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000">*
+Existem comandos que só aparecem para o root<br/>
+Ex: <font color="#000000"><b>halt
+  /sbin </b></font><font color="#000000">só é </font><font color="#000000">executado</font><font color="#000000">
+pelo root</font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000">Para
+localizar comandos ou seja saber onde os comandos estão:</font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000">Ex:
+</font><font color="#000000"><b>which ls</b></font><font color="#000000">
+        </font><font color="#000000">Resultado: </font><font color="#000000"><b>/usr/bin/ls</b></font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000">Ex:
+</font><font color="#000000"><b>which shutdown</b></font><font color="#000000">
+      </font><font color="#000000">Resultado: </font><font color="#000000"><b>/usr/sbin/shutdown
+<br/>
+<br/>
+</b></font><b>* </b><font color="#000000"><b>shutdown </b></font>Só
+aparece se estiver logado como root<br/>
+* Usuário comum não
+desliga o sistema </span></font></font></font>
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<br/>
+<br/>
+
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<br/>
+<br/>
+
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#000000">Quanto
+trabalhamos com comandos nós temos as opções dos comandos:</span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#000000">Ex:
+<u>cp</u> <u>-rfv</u> <u>/etc/root<br/>
+</u><span style="text-decoration: none">cp
+= comando<br/>
+-rfv = Opções<br/>
+/etc/root = Parâmetros</span></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000">*
+Quando criar arquivos no Linux não use espaços, pois, espaços
+fazem parte de comandos no Shell.</span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000">*
+Podemos usar caracteres especiais </font><font color="#000000">que
+podem substituir caracteres.</font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000">Ex:
+</font><font color="#000000"><b>ls /etc/host* </b></font><font color="#000000">(vai
+procurar dentro do diretório </font><font color="#000000"><b>/etc</b></font><font color="#000000">
+tudo que tiver host)</font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000">*
+</font><font color="#000000"><b>?</b></font><font color="#000000">
+(Interrogação) também é um caractere especial)  Ex: ls /dev/sda?</font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000"><br/>
+A
+interrogação substitui apenas um caractere, neste caso vai procurar
+tudo que for </font><font color="#000000"><b>SDA?</b></font><font color="#000000">
+alguns coisa </font><font color="#000000">Ex: /dev/sda1  - /dev/sda2
+- /dev/sda3</font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000">*
+Também é possível usar colchetes </font><font color="#000000"><b>[]</b></font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000"><b>ls
+/dev/sd[abc] </b></font><font color="#000000">resultado  </font><font color="#000000"><b>/dev/sda
+</b></font><font color="#000000">(procura tudo que for sd alguma
+coisa </font></span></font></font></font>
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000">*
+Também é possível usar chaves</font><font color="#000000"><b>{}</b></font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000">Ex:
+</font><font color="#000000"><b>ls /dev/{sda,null}</b></font><font color="#000000">
+Resultado: </font><font color="#000000"><b>/dev/null /</b></font><font color="#000000"><b>dev/sda
+</b></font></span></font></font></font>
+</p>
+<p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><u><font color="#ff0000"><font color="#000000">Outras
+formas de usar </font><font color="#000000"><b>ls </b></font></span></u></font></font></font>
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm; text-decoration: none">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><b><font color="#ff0000"><font color="#000000">ls
+-l /etc/  </font></b><font color="#000000"><span style="font-weight: normal">-
+mostra em lista</span></font><b><font color="#000000"> <br/>
+ls -a
+/etc/ </font></b><font color="#000000"><span style="font-weight: normal">-
+mostra arquivos ocultos </span></font></span></font></font></font>
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm; text-decoration: none">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000"><span style="font-weight: normal">*
+Tudo que tiver . (ponto) na frente se torna um arquivo oculto. Ex.
+</span></font><b><font color="#000000">.profile</font></b></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm; text-decoration: none">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><b><font color="#ff0000"><font color="#000000">ls
+–-color  /etc/ </font></b><font color="#000000"><span style="font-weight: normal">(Mostra
+de forma colorida), assim diferencia arquivo, diretório e link.</span></span></font></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm; text-decoration: none">
+<img src="Permissoes-de-arquivos_html_83916c60ef0bdbd1.gif" name="Quadro de texto 9" alt="Quadro de texto 9" align="left" width="523" height="46"/>
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><b><font color="#ff0000"><font color="#000000">ls
+–-color -F /etc </font></b><font color="#000000"><span style="font-weight: normal">(O
+F adiciona uma informação na frente da barra. Ex: <br/>
+/ diretório
+<br/>
+</span></font><font color="#000000"><span style="font-weight: normal">@
+link <br/>
+password<br/>
+rc.local*</span></font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm; text-decoration: none">
+<br/>
+<br/>
+
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm; text-decoration: none">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><b><font color="#ff0000"><font color="#000000">ls
+-laF –-color /etc<br/>
+l = </font></b><font color="#000000"><span style="font-weight: normal">lista</span></font><b><font color="#000000"><br/>
+a
+= </font></b><font color="#000000"><span style="font-weight: normal">Oculto</span></font><b><font color="#000000"><br/>
+F
+= </font></b><font color="#000000"><span style="font-weight: normal">Identificando
+a característica de cada arquivo</span></font></span></font></font></font></p>
+<p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm; text-decoration: none">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><b><font color="#ff0000"><font color="#000000">Digitar
+comandos em sequência </font></span></b></font></font></font>
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm; text-decoration: none">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><b><font color="#ff0000"><font color="#000000">;
+</font></b><font color="#000000"><span style="font-weight: normal">(ponto
+e virgula) executa os comandos independente se o último foi
+executado com sucesso ou não.</span></span></font></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm; text-decoration: none">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000"><span style="font-weight: normal">Ex:
+</span></font><b><font color="#000000">cls;  cd /etc; pwd 
+</font></b><font color="#000000"><span style="font-weight: normal">(Resultado:
+comando não encontrado</span></font><font color="#000000"><span style="font-weight: normal">,
+mas entra na pasta </span></font><b><font color="#000000">/etc</font></b><font color="#000000"><span style="font-weight: normal">)</span></font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<img src="Permissoes-de-arquivos_html_4594224a63ae78a9.gif" name="Linha 1" alt="Linha 1" align="left" width="31" height="24"/>
+<img src="Permissoes-de-arquivos_html_13ed048ea0f6300a.gif" name="Quadro de texto 10" alt="Quadro de texto 10" align="left" width="138" height="18"/>
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000"><b><br/>
+</b></font><font color="#000000"><b>&amp;
+</b></font><font color="#000000">e comercial</font><font color="#000000"><b>
+</b></font></span></font></font></font>
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000"><b>cls
+&amp;&amp; cd /etc &amp;&amp; pwd </b></font><font color="#000000">(Executa
+o comando seguinte apenas se o anterior foi bem-sucedido)</font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000"><b>||</b></font><font color="#000000">
+Duplo tipe  (Executa o comando seguinte apenas se o anterior não foi
+executado com sucesso.</font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><b><font color="#ff0000"><font color="#000000">cls
+|| cd /etc || pwd</font></span></b></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000">*
+TAB – Completa o nome dos arquivos, se apertar mais vezes, mais
+mostrando mais opções</font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><font color="#ff0000"><font color="#000000">*
+HELP – mostra todos os comandos (Exemplo: comando + help)</font></span></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="2" style="font-size: 11pt"><b><font color="#ff0000">*
+man + comando</b><font color="#000000"><span style="font-weight: normal">
+(Exemplo: man ls )</span></span></font></font></font></font></p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<br/>
+<br/>
+
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<br/>
+<br/>
+
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<br/>
+<br/>
+
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<br/>
+<br/>
+
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<br/>
+<br/>
+
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<br/>
+<br/>
+
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<br/>
+<br/>
+
+</p>
+<p align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<br/>
+<br/>
+
+</p>
+<p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<br/>
+<br/>
+
+</p>
+<p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<br/>
+<br/>
+
+</p>
+<p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 128%; orphans: 2; widows: 2; margin-bottom: 0.64cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="5" style="font-size: 20pt"><font color="#1c1d1f">CHMOD
+versus CHOWN</span></font></font></font></p>
+<h4 class="western" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 110%; orphans: 60; widows: 2; margin-right: 1cm; margin-top: 0cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="4" style="font-size: 14pt"><font color="#1c1d1f">Permissões
+de arquivos</span></font></font></font></h4>
+<p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 110%; orphans: 60; widows: 2; margin-left: 1cm; margin-right: 1cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</p>
+<p style="orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font color="#1c1d1f"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">O
+comando&nbsp;</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#1c1d1f"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b><strong>chmod</b></span></span></font></font></font></span></strong><font color="#1c1d1f"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">&nbsp;permite
+alterar as permissões de arquivo, enquanto&nbsp;</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#1c1d1f"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b><strong>chown</b></span></span></font></font></font></span></strong><font color="#1c1d1f"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">&nbsp;altera
+o dono do arquivo.</span></span></span></span></font></font></font></span></p>
+<p style="orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<span style="display: inline-block; border: none; padding: 0cm"><span style="font-variant: normal"><font color="#1c1d1f"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b><strong>Inserindo
+todas as permissões a um arquivo</span></b></span></span></font></font></font></span></strong></p>
+<p style="orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</p>
+<p style="orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<span style="display: inline-block; border: 1px solid #d1d7dc; padding: 0.05cm 0.11cm"><span style="font-variant: normal"><font color="#b4690e"><font face="sfmono-regular, Consolas, liberation mono, Menlo, Courier, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: #ffffff"><code class="western">chmod
+777 arquivo.txt</span></span></span></span></span></font></font></font></span></code></p>
+<p style="orphans: 60; widows: 2; margin-bottom: 0.53cm; border: none; padding: 0cm">
+<br/>
+<br/>
+
+</p>
+<blockquote style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="3" style="font-size: 12pt"><font color="#1c1d1f">O
+que significa cada número?</span></font></font></font></blockquote>
+<blockquote style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</blockquote>
+<blockquote style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<img src="Permissoes-de-arquivos_html_e1adbe0b4095cff5.png" name="Figura1" align="left" width="423" height="208" border="0"/>
+<br/>
+
+</blockquote>
+<blockquote style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</blockquote>
+<blockquote style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</blockquote>
+<blockquote style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</blockquote>
+<blockquote style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</blockquote>
+<blockquote style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</blockquote>
+<blockquote style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</blockquote>
+<blockquote style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</blockquote>
+<blockquote style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</blockquote>
+<blockquote style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</blockquote>
+<blockquote style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</blockquote>
+<blockquote style="font-variant: normal; letter-spacing: normal; orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</blockquote>
+<p style="orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<span style="display: inline-block; border: none; padding: 0cm"><span style="font-variant: normal"><font color="#1c1d1f"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b><strong>Mudando
+o dono de um arquivo</span></b></span></span></font></font></font></span></strong></p>
+<p style="orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<br/>
+
+</p>
+<p style="orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<span style="display: inline-block; border: 1px solid #d1d7dc; padding: 0.05cm 0.11cm"><span style="font-variant: normal"><font color="#b4690e"><font face="sfmono-regular, Consolas, liberation mono, Menlo, Courier, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: #ffffff"><code class="western">chown
+diego:diego arquivo.txt</span></span></span></span></span></font></font></font></span></code></p>
+<p style="orphans: 60; widows: 2; margin-bottom: 0.53cm; border: none; padding: 0cm">
+<br/>
+<br/>
+
+</p>
+<p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0.53cm; border: none; padding: 0cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="3" style="font-size: 12pt"><font color="#1c1d1f">O
+parâmetro -R faz com que a alteração seja recursiva, isto é,
+afete todas as pastas e arquivos dentro de uma pasta especificada.</span></font></font></font></p>
+<p style="orphans: 60; widows: 2; margin-bottom: 0cm; border: none; padding: 0cm">
+<span style="display: inline-block; border: 1px solid #d1d7dc; padding: 0.05cm 0.11cm"><span style="font-variant: normal"><font color="#b4690e"><font face="sfmono-regular, Consolas, liberation mono, Menlo, Courier, monospace"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: #ffffff"><code class="western">chmod
+-R 777 *</span></span></span></span></span></font></font></font></span></code></p>
+<p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 60; widows: 2; margin-bottom: 0.53cm; border: none; padding: 0cm">
+<span style="display: inline-block; border: none; padding: 0cm"><font face="sf pro text, apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol"><font size="4" style="font-size: 13pt"><font color="#1c1d1f">Neste
+exemplo o * indica tudo presente no diretório.</span></font></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+</body>
+</html>
